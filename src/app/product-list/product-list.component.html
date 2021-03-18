@@ -1,0 +1,5 @@
+<app-add-product (productAdded)="addProduct($event)"></app-add-product>
+
+<div id="listContainer">
+    <app-product-item *ngFor="let product of productList" [productData]="product" (productDeleted)="deleteProduct($event)"></app-product-item>
+</div>
